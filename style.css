@@ -1,0 +1,316 @@
+html {
+ margin-top: 25px;
+ background-color: #FF9A8B;
+background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+}
+
+body {
+background-image: url(images/image-lion-background-reverse.png);
+background-position: top center;
+background-repeat: no-repeat;
+
+font-family: 'Roboto', sans-serif;
+color:white; 
+font-size: 1.125rem;
+}
+
+
+.container {
+   
+   width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+header {
+    
+   display: flex;
+   min-height: 100px;
+   justify-content: space-between;
+   align-items: center;
+   /* Making a nice line underneath the header  */
+   /* border-bottom: 1px solid rgb(255, 255, 255); */
+   padding-bottom: 25px;
+   
+}
+
+
+main {
+   
+   min-height: 300px;
+   display:flex; 
+   align-items: center;
+   padding-top: 15px;
+
+}
+
+
+.main2 {
+   min-height: 300px; 
+   padding-top: 60px;
+   
+}
+
+.main2 input  {
+  
+   background-color: rgba(255, 255, 255, 0.24);
+   color:#ffffff; 
+   font-family:'Playfair Display', serif;
+   padding: 12px 25px 12px 25px;
+   border-radius: 9px;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+   text-align: center;
+   margin-right: 20px;
+   margin-top: 20px;
+   border:0;  /* Getting rid of the defaut input borders  */
+   font-size: 1.125rem;
+}
+input:hover {
+   background-color: black;
+   transition-duration: 1s;
+}
+
+/* change the grey colour by default  */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+.card1, .card2, .card3 {
+   padding: 30px 30px 20px 30px; 
+   box-sizing: border-box;
+}
+
+.cards {
+  
+   min-height: 300px;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   
+}
+
+.card1 {
+   background-image:url(images/image-background-card1.jpg);
+   background-size: cover;
+   min-height: 250px;
+   width: 30%; 
+   background-position: bottom;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+   border-radius: 9px;
+}
+
+.card2 {
+   background-image:url(images/image-background-card2.jpg);
+   min-height:250px;
+   width: 30%;
+   background-position: bottom;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+   border-radius: 9px;
+}
+
+.card3 {
+   background-image: url(images/image-background-card3.jpg);
+   min-height: 250px;
+   width: 30%; 
+   background-position: bottom;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+   border-radius: 9px;
+}
+
+
+.herobox1 {
+   flex:2; /* I want this one occupies 2 parts */
+  
+  
+   
+}
+
+/* .herobox1 p {
+   
+   text-align: left;
+
+}
+.herobox2 {
+   flex:1; /* I want this one occupies 1 part  } */
+  
+  
+
+
+nav {
+   justify-content: flex-end; 
+   padding-right: 20px;
+   text-decoration:none;
+   
+   
+}
+
+.navButton {
+   padding: 11px 25px; 
+   font-family: 'Playfair Display', serif;
+   display: inline-block;
+   position: relative;
+}
+
+img {
+   justify-content: flex-start; 
+   padding-left: 0px;
+   padding-top: 0px;;
+}
+
+nav a {
+   text-decoration:none;
+   justify-content: space-between; 
+   color:rgb(255, 255, 255);
+   padding-left:10px;
+   padding-right:10px;
+   display:inline; 
+ 
+}
+
+h1 {
+   font-family: 'Playfair Display', serif;
+   font-size:3.25rem;
+   margin-bottom:1.5rem;
+   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.228);
+}
+
+
+
+
+h2 {
+   font-size:2rem;
+   margin-bottom:0.5rem;
+   font-family: 'Playfair Display', serif;  
+}
+
+
+p {
+   line-height: 1.75rem;
+   margin-bottom:0.5rem;
+   
+}
+
+
+.cards p {
+font-size: 0.85rem;
+line-height:1.2rem;
+margin:10px;
+}
+
+i {
+   font-size:80px;
+   padding-top:10px;
+}
+
+ a {
+   color: white;
+   text-decoration: none;
+}
+
+.myButton {
+   background-color: rgba(255, 255, 255, 0.24);
+   color:#ffffff; 
+   font-family:'Playfair Display', serif;
+   padding: 12px 25px 12px 25px;
+   border-radius: 9px;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+   text-align: center;
+   
+}
+
+
+.myButton:hover {
+   background-color:black;
+   transition-duration: 1s;
+}
+
+a.myButton {
+   display:inline-block; 
+   margin-top:20px;
+   
+}
+
+.herobox2 img {
+   border-radius: 9px; 
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+}
+
+header .img {
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+}
+
+/* Space means a.myButton is inside of nav tag. Creating a spacing between header buttons */
+nav a.myButton { 
+margin-left: 30px; 
+}
+
+/* 
+How to make borders on the header buttons  */
+/* .buttonNav {
+   border-style: solid;
+   border-color: rgb(255, 255, 255);
+   border-width: 1px;
+   padding: 10px 20px 10px 20px;
+} */
+
+.tbox{
+width: 47%;
+padding:50px;
+border: 1px solid rgb(255, 255, 255);
+box-sizing: border-box; 
+margin-top: 50px;
+border-radius: 9px; 
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+ 
+
+
+}
+
+.testimonials {
+ display: flex;
+ flex-wrap: wrap-reverse;
+ justify-content:space-between;
+ margin-bottom:100px;
+}
+
+.tbox :last-child {
+   font-size: 0.8rem;
+   text-align: right;
+}
+
+.dropdown {
+   display: none;
+   position: absolute;
+   z-index: 1;
+   padding-top:20px;
+   text-align: center;
+   
+  
+
+}
+
+.navButton:hover .dropdown {
+   display:block; 
+}
+
+.dropdown .navButton  {
+   width: 200px; 
+   background-color: rgba(255, 255, 255, 0.24);
+   color:#ffffff; 
+   font-family:'Playfair Display', serif;
+   padding: 12px 25px 12px 25px;
+   border-radius: 9px;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+   text-align: center;
+   margin-bottom:12px;
+}
+
+
+.dropdown .navButton:hover {
+
+   background-color: black;
+   transition-duration: 1s;
+
+}
